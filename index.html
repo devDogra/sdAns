@@ -1,0 +1,2244 @@
+<html lang="en">
+
+<head>
+    <script src="script.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <title>React App</title>
+    <style>
+        ul {
+            list-style-type: decimal;
+        }
+        body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif}code{font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace}body{background-color:#f8f9fa;font-family:Arial,sans-serif;margin:0;padding:0}.App{background-color:#fff;border-radius:8px;box-shadow:0 0 20px #0000001a;margin:20px auto;max-width:800px;padding:20px}.site-header{margin-bottom:30px;text-align:center}.site-header h1{color:#007bff;margin-bottom:10px}.trademark{color:#666;font-size:14px}.question{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 4px #0000001a;margin-bottom:30px;padding:20px}.question h2{color:#333;margin-bottom:15px}.questions-container{display:flex;flex-direction:column}ul{list-style:none;padding:0}.choice{background-color:#f8f9fa;border:1px solid #ced4da;border-radius:6px;cursor:pointer;padding:10px;transition:background-color .3s ease}.choice:hover{background-color:#e2e6ea}.site-footer{background-color:#f8f9fa;border-top:1px solid #e0e0e0;margin-top:30px;padding:10px;text-align:center}.site-footer p{color:#666;font-size:14px;margin:0}
+/*# sourceMappingURL=main.7a93a177.css.map*/
+
+    </style>
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="App">
+            <header class="site-header">
+                <h1>Computer Architecture</h1>
+                <p class="trademark">Created by ... .... ..- -... .... .- -- ... .- --. .- .-. ™</p>
+            </header>
+            <div class="questions-container">
+                <div class="question">
+                    <h2>A single thread of control allows the process to perform __________</h2>
+                    <ul>
+                        <li class="choice">only one task at a time</li>
+                        <li class="choice">multiple tasks at a time</li>
+                        <li class="choice">only two tasks at a time</li>
+                        <li class="choice">all of the mentioned</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the objective of multiprogramming?</h2>
+                    <ul>
+                        <li class="choice">Have a process running at all time</li>
+                        <li class="choice">Have multiple programs waiting in a queue ready to run</li>
+                        <li class="choice">To increase CPU utilization</li>
+                        <li class="choice">None of the mentioned</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>what does PCB resides in the computer architecture?</h2>
+                    <ul>
+                        <li class="choice">Process Register</li>
+                        <li class="choice">Program Counter</li>
+                        <li class="choice">OS</li>
+                        <li class="choice">Process Unit</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>what is the purpose of page replacement algorithms</h2>
+                    <ul>
+                        <li class="choice">swap in and swap out</li>
+                        <li class="choice">the number of processes in the ready state</li>
+                        <li class="choice">the number of processes in the I/O queue</li>
+                        <li class="choice">the number of processes in memory</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is not the state of a process?</h2>
+                    <ul>
+                        <li class="choice">New</li>
+                        <li class="choice">Old</li>
+                        <li class="choice">Waiting</li>
+                        <li class="choice">Running</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is a Process Control Block?</h2>
+                    <ul>
+                        <li class="choice">Process type variable</li>
+                        <li class="choice">Data Structure</li>
+                        <li class="choice">A secondary storage section</li>
+                        <li class="choice">A Block in memory</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Process Control Block(PCB) does not contain which of the following?</h2>
+                    <ul>
+                        <li class="choice">Code</li>
+                        <li class="choice">Stack</li>
+                        <li class="choice">Bootstrap program</li>
+                        <li class="choice">Data</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The number of processes completed per unit time is known as __________</h2>
+                    <ul>
+                        <li class="choice">Output</li>
+                        <li class="choice">Throughput</li>
+                        <li class="choice">Efficiency</li>
+                        <li class="choice">Capacity</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The state of a process is defined by __________</h2>
+                    <ul>
+                        <li class="choice">the final activity of the process</li>
+                        <li class="choice">the activity just executed by the process</li>
+                        <li class="choice">the activity to next be executed by the process</li>
+                        <li class="choice">the current activity of the process</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>out of these choices select the valid OS.</h2>
+                    <ul>
+                        <li class="choice">Windows 10</li>
+                        <li class="choice">Oracle Database</li>
+                        <li class="choice">Android</li>
+                        <li class="choice">macOS</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the maximum length of a filename in DOS?</h2>
+                    <ul>
+                        <li class="choice">8 characters</li>
+                        <li class="choice">12 characters</li>
+                        <li class="choice">255 characters</li>
+                        <li class="choice">Unlimited</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>When was the first operating system developed?</h2>
+                    <ul>
+                        <li class="choice">1956</li>
+                        <li class="choice">1975</li>
+                        <li class="choice">1985</li>
+                        <li class="choice">1995</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is the extension of a Notepad text file?</h2>
+                    <ul>
+                        <li class="choice">.txt</li>
+                        <li class="choice">.doc</li>
+                        <li class="choice">.docx</li>
+                        <li class="choice">.pdf</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the command line also called?</h2>
+                    <ul>
+                        <li class="choice">Shell</li>
+                        <li class="choice">Kernel</li>
+                        <li class="choice">Driver</li>
+                        <li class="choice">Device</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the full name of FAT?</h2>
+                    <ul>
+                        <li class="choice">File Allocation Table</li>
+                        <li class="choice">File Access Table</li>
+                        <li class="choice">File Allocation Tree</li>
+                        <li class="choice">File Access Tree</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In Unix, which system call creates a new process?</h2>
+                    <ul>
+                        <li class="choice">fork()</li>
+                        <li class="choice">exec()</li>
+                        <li class="choice">open()</li>
+                        <li class="choice">close()</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the primary function of an operating system?</h2>
+                    <ul>
+                        <li class="choice">To manage hardware resources</li>
+                        <li class="choice">to manage softwares</li>
+                        <li class="choice">To interact with users</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What are the two types of operating systems?</h2>
+                    <ul>
+                        <li class="choice">Single-user and multi-user</li>
+                        <li class="choice">Single-tasking and multi-tasking</li>
+                        <li class="choice">Single-threaded and multi-threaded</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the difference between a process and a thread?</h2>
+                    <ul>
+                        <li class="choice">A process is a heavy-weight entity, while a thread is a lightweight entity
+                        </li>
+                        <li class="choice">both are same</li>
+                        <li class="choice">a process runs in RAM while thread runs in Secondry device</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a PCB?</h2>
+                    <ul>
+                        <li class="choice">To translate virtual memory addresses to physical memory addresses</li>
+                        <li class="choice">To manage the allocation and deallocation of memory</li>
+                        <li class="choice">to Store process related data in a data structure</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a CPU?</h2>
+                    <ul>
+                        <li class="choice">to Execute instructions</li>
+                        <li class="choice">To allocate CPU time to processes</li>
+                        <li class="choice">To ensure that processes do not interfere with each other</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Linux is an ______</h2>
+                    <ul>
+                        <li class="choice">operating system</li>
+                        <li class="choice">driver</li>
+                        <li class="choice">cache memory</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file system?</h2>
+                    <ul>
+                        <li class="choice">To organize and manage files and directories on a storage device</li>
+                        <li class="choice">To provide a way for the operating system to access and manipulate files</li>
+                        <li class="choice">To ensure that data is stored in a reliable and consistent manner</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a security system?</h2>
+                    <ul>
+                        <li class="choice">To protect the operating system and its resources from unauthorized access
+                        </li>
+                        <li class="choice">To protect data from being corrupted or destroyed</li>
+                        <li class="choice">To prevent users from performing unauthorized actions</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Operating System maintains the page table for ____________</h2>
+                    <ul>
+                        <li class="choice">each process</li>
+                        <li class="choice">each thread</li>
+                        <li class="choice">each instruction</li>
+                        <li class="choice">each address</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is compaction?</h2>
+                    <ul>
+                        <li class="choice">a technique for overcoming internal fragmentation</li>
+                        <li class="choice">a paging technique</li>
+                        <li class="choice">a technique for overcoming external fragmentation</li>
+                        <li class="choice">a technique for overcoming fatal error</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The page table contains ____________</h2>
+                    <ul>
+                        <li class="choice">base address of each page</li>
+                        <li class="choice">page offset</li>
+                        <li class="choice">page size</li>
+                        <li class="choice">none of the mentioned</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The address of a page table in memory is pointed by ____________</h2>
+                    <ul>
+                        <li class="choice">stack pointer</li>
+                        <li class="choice">page table base register</li>
+                        <li class="choice">register</li>
+                        <li class="choice">program counter</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Program always deals with ____________</h2>
+                    <ul>
+                        <li class="choice">logical address</li>
+                        <li class="choice">absolute address</li>
+                        <li class="choice">physical address</li>
+                        <li class="choice">relative address</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Run time mapping from virtual to physical address is done by ____________</h2>
+                    <ul>
+                        <li class="choice">Memory management unit</li>
+                        <li class="choice">CPU</li>
+                        <li class="choice">PCI</li>
+                        <li class="choice">None of the mentioned</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Memory management technique in which system stores and retrieves data from secondary storage for
+                        use in main memory is called?</h2>
+                    <ul>
+                        <li class="choice">fragmentation</li>
+                        <li class="choice">paging</li>
+                        <li class="choice">mapping</li>
+                        <li class="choice">none of the mentioned</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>A memory buffer used to accommodate a speed differential is called ____________</h2>
+                    <ul>
+                        <li class="choice">stack pointer</li>
+                        <li class="choice">cache</li>
+                        <li class="choice">accumulator</li>
+                        <li class="choice">disk buffer</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which one of the following is the address generated by CPU?</h2>
+                    <ul>
+                        <li class="choice">physical address</li>
+                        <li class="choice">absolute address</li>
+                        <li class="choice">logical address</li>
+                        <li class="choice">none of the mentioned</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>CPU fetches the instruction from memory according to the value of ____________</h2>
+                    <ul>
+                        <li class="choice">program counter</li>
+                        <li class="choice">status register</li>
+                        <li class="choice">instruction register</li>
+                        <li class="choice">program status word</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>With limit registers and relocation, each logical address must be _______ the limit register.
+                    </h2>
+                    <ul>
+                        <li class="choice">Not equal to</li>
+                        <li class="choice">equal to</li>
+                        <li class="choice">greater than</li>
+                        <li class="choice">less than</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>heap stores?</h2>
+                    <ul>
+                        <li class="choice">global object and global variables</li>
+                        <li class="choice">array</li>
+                        <li class="choice">Integer</li>
+                        <li class="choice">number</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The size of the operating system during program execution is ——— while using transient code.
+                    </h2>
+                    <ul>
+                        <li class="choice">changed</li>
+                        <li class="choice">increased</li>
+                        <li class="choice">maintained</li>
+                        <li class="choice">decreased</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which memory is divided into several fixed sized partitions.</h2>
+                    <ul>
+                        <li class="choice">multiple processes at once</li>
+                        <li class="choice">exactly one process</li>
+                        <li class="choice">RAM</li>
+                        <li class="choice">at least one process</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>wihich is worst algorithm for hole finding?</h2>
+                    <ul>
+                        <li class="choice">worst fit</li>
+                        <li class="choice">first fit</li>
+                        <li class="choice">best fit</li>
+                        <li class="choice">good fit</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The strategies like the first fit, best fit and worst fit are used to select a ______.</h2>
+                    <ul>
+                        <li class="choice">process from a queue to put in storage</li>
+                        <li class="choice">process from a queue to put in memory</li>
+                        <li class="choice">processor to run the next process</li>
+                        <li class="choice">free hole from a set of available holes</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>how to get no of cpu cores is system?</h2>
+                    <ul>
+                        <li class="choice">using os module</li>
+                        <li class="choice">using fs module</li>
+                        <li class="choice">using express module</li>
+                        <li class="choice">using path module</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>To load and store the system data from memory ——- is used</h2>
+                    <ul>
+                        <li class="choice">register</li>
+                        <li class="choice">RAM</li>
+                        <li class="choice">ROM</li>
+                        <li class="choice">BUSES</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The stack pointer is a register that points to the</h2>
+                    <ul>
+                        <li class="choice">Push of the stack</li>
+                        <li class="choice">Bottom of the stack</li>
+                        <li class="choice">Top of the stack</li>
+                        <li class="choice">Pop of the stack</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>To read the———— I/O instruction transfer is used</h2>
+                    <ul>
+                        <li class="choice">Information</li>
+                        <li class="choice">Instructions</li>
+                        <li class="choice">Description</li>
+                        <li class="choice">Data</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>——– Address is always deal with the program</h2>
+                    <ul>
+                        <li class="choice">absolute</li>
+                        <li class="choice">relative</li>
+                        <li class="choice">logical</li>
+                        <li class="choice">home</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>——- is contained by the page table</h2>
+                    <ul>
+                        <li class="choice">accumulator size</li>
+                        <li class="choice">base address of every page</li>
+                        <li class="choice">ram size</li>
+                        <li class="choice">logical address</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>For ——– the page table is maintained by the Operating System</h2>
+                    <ul>
+                        <li class="choice">each instruction</li>
+                        <li class="choice">each process</li>
+                        <li class="choice">each thread</li>
+                        <li class="choice">each address</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The operating system is in?</h2>
+                    <ul>
+                        <li class="choice">RAM</li>
+                        <li class="choice">System bus</li>
+                        <li class="choice">either a or d (depending on the location of interrupt vector)</li>
+                        <li class="choice">low memory</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>CPU register are used to</h2>
+                    <ul>
+                        <li class="choice">to store data</li>
+                        <li class="choice">providing less address space to processes</li>
+                        <li class="choice">to protect the address spaces of processes</li>
+                        <li class="choice">providing more address space to processes</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Instructions fetched by CPU according to the value of —— from memory?</h2>
+                    <ul>
+                        <li class="choice">program status word</li>
+                        <li class="choice">status register</li>
+                        <li class="choice">program counter</li>
+                        <li class="choice">instruction register</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>which of the foloowing is a type of multithreading?</h2>
+                    <ul>
+                        <li class="choice">multithreading</li>
+                        <li class="choice">accumulator</li>
+                        <li class="choice">disk buffer</li>
+                        <li class="choice">stack pointer</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The address generated by CPU is:</h2>
+                    <ul>
+                        <li class="choice">absolute address</li>
+                        <li class="choice">logical address</li>
+                        <li class="choice">physical address</li>
+                        <li class="choice">mac address</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following stores process data in a dataStructure?</h2>
+                    <ul>
+                        <li class="choice">CPU</li>
+                        <li class="choice">Operating system</li>
+                        <li class="choice">memory management unit</li>
+                        <li class="choice">PCB</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>—— is used to point the address of a page table in memory</h2>
+                    <ul>
+                        <li class="choice">register</li>
+                        <li class="choice">program counter</li>
+                        <li class="choice">stack pointer</li>
+                        <li class="choice">page table base register</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is a process in an operating system?</h2>
+                    <ul>
+                        <li class="choice">A program in execution</li>
+                        <li class="choice">A file in storage</li>
+                        <li class="choice">An input device</li>
+                        <li class="choice">A printer</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is responsible for process scheduling in an operating system?</h2>
+                    <ul>
+                        <li class="choice">mouse</li>
+                        <li class="choice">process scheduler</li>
+                        <li class="choice">Hard Disk</li>
+                        <li class="choice">Keyboard</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a process manager?</h2>
+                    <ul>
+                        <li class="choice">To manage disk space</li>
+                        <li class="choice">To manage memory</li>
+                        <li class="choice">To manage process execution</li>
+                        <li class="choice">To manage network connections</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is a thread?</h2>
+                    <ul>
+                        <li class="choice">a process</li>
+                        <li class="choice">A file in storage</li>
+                        <li class="choice">An output device</li>
+                        <li class="choice">A programming language</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following scheduling algorithms uses time slices or time quanta for each process?
+                    </h2>
+                    <ul>
+                        <li class="choice">First-Come-First-Serve (FCFS)</li>
+                        <li class="choice">Shortest Job Next (SJN)</li>
+                        <li class="choice">Round Robin (RR)</li>
+                        <li class="choice">Priority Scheduling</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of swapping in process management?</h2>
+                    <ul>
+                        <li class="choice">To increase system speed</li>
+                        <li class="choice">To swap processes in and out of main memory and put another process</li>
+                        <li class="choice">To improve process communication</li>
+                        <li class="choice">To prevent two or more processes from completing their execution</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the role of a queues in process management?</h2>
+                    <ul>
+                        <li class="choice">Allocating memory to processes</li>
+                        <li class="choice">to store process</li>
+                        <li class="choice">Managing disk space</li>
+                        <li class="choice">Handling input/output operations</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is NOT a state of a process in the process life cycle?</h2>
+                    <ul>
+                        <li class="choice">Ready</li>
+                        <li class="choice">Running</li>
+                        <li class="choice">Standby</li>
+                        <li class="choice">Terminated</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of the Ready Queue in process scheduling?</h2>
+                    <ul>
+                        <li class="choice">To hold processes that are waiting for I/O</li>
+                        <li class="choice">To hold processes that are waiting for CPU to execute</li>
+                        <li class="choice">To hold processes that have completed execution</li>
+                        <li class="choice">To hold processes that are waiting for memory</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>which module is used to run instance of a process of node in different cores?</h2>
+                    <ul>
+                        <li class="choice">cluster</li>
+                        <li class="choice">os</li>
+                        <li class="choice">path</li>
+                        <li class="choice">fs</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which scheduling algorithm selects the process with the shortest total burst time first?</h2>
+                    <ul>
+                        <li class="choice">First-Come-First-Serve (FCFS)</li>
+                        <li class="choice">Shortest Job Next (SJN)</li>
+                        <li class="choice">Priority Scheduling</li>
+                        <li class="choice">Round Robin (RR)</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a process control block (PCB)?</h2>
+                    <ul>
+                        <li class="choice">To manage file systems</li>
+                        <li class="choice">To store process-related information</li>
+                        <li class="choice">To control network connections</li>
+                        <li class="choice">To allocate memory to processes</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the main disadvantage of the Round Robin scheduling algorithm?</h2>
+                    <ul>
+                        <li class="choice">Poor throughput</li>
+                        <li class="choice">High turnaround time</li>
+                        <li class="choice">Inefficient use of CPU</li>
+                        <li class="choice">Low response time</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is a characteristic of a real-time operating system?</h2>
+                    <ul>
+                        <li class="choice">High throughput</li>
+                        <li class="choice">Predictable response time</li>
+                        <li class="choice">Multitasking capability</li>
+                        <li class="choice">General-purpose functionality</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of context switching?</h2>
+                    <ul>
+                        <li class="choice">To select processes from the Ready Queue</li>
+                        <li class="choice">To swap processes in and out of main memory</li>
+                        <li class="choice">To allocate CPU to processes</li>
+                        <li class="choice">To handle I/O operations</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which scheduling algorithm allows processes to hold the CPU for an extended time?</h2>
+                    <ul>
+                        <li class="choice">Round Robin (RR)</li>
+                        <li class="choice">Shortest Job Next (SJN)</li>
+                        <li class="choice">weighted round robin</li>
+                        <li class="choice">Priority Scheduling</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the goal of process synchronization in operating systems?</h2>
+                    <ul>
+                        <li class="choice">To improve process communication</li>
+                        <li class="choice">To prevent deadlocks</li>
+                        <li class="choice">To allocate memory efficiently</li>
+                        <li class="choice">To manage disk space</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In a multi-programming environment, what does the term "context switch" refer to?</h2>
+                    <ul>
+                        <li class="choice">Changing the state of a process</li>
+                        <li class="choice">Allocating memory to a process</li>
+                        <li class="choice">Handling I/O operations</li>
+                        <li class="choice">Swapping processes in and out of main memory</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which algorithm selects the process with the highest priority for execution?</h2>
+                    <ul>
+                        <li class="choice">Round Robin (RR)</li>
+                        <li class="choice">Shortest Job Next (SJN)</li>
+                        <li class="choice">Priority Scheduling</li>
+                        <li class="choice">First-Come-First-Serve (FCFS)</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a pcb in process?</h2>
+                    <ul>
+                        <li class="choice">To store process data in a data structure</li>
+                        <li class="choice">To ensure mutual exclusion</li>
+                        <li class="choice">To improve process communication</li>
+                        <li class="choice">To allocate memory to processes</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is a file system in an operating system?</h2>
+                    <ul>
+                        <li class="choice">System files for the operating system</li>
+                        <li class="choice">A way to organize and store files on a storage device</li>
+                        <li class="choice">Application software</li>
+                        <li class="choice">CPU scheduler</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is not a type of file allocation method?</h2>
+                    <ul>
+                        <li class="choice">Contiguous Allocation</li>
+                        <li class="choice">Linked Allocation</li>
+                        <li class="choice">Indexed Allocation</li>
+                        <li class="choice">Dynamic Allocation</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a directory in a file system?</h2>
+                    <ul>
+                        <li class="choice">To store files</li>
+                        <li class="choice">To organize and manage files</li>
+                        <li class="choice">To allocate disk space</li>
+                        <li class="choice">To execute programs</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which file system is widely used in Windows operating systems?</h2>
+                    <ul>
+                        <li class="choice">FAT32</li>
+                        <li class="choice">Ext4</li>
+                        <li class="choice">NTFS</li>
+                        <li class="choice">HFS+</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of an inode in Unix-like file systems?</h2>
+                    <ul>
+                        <li class="choice">To store file data</li>
+                        <li class="choice">To store file permissions and metadata</li>
+                        <li class="choice">To organize directories</li>
+                        <li class="choice">To allocate disk space</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is fragmentation in the context of file systems?</h2>
+                    <ul>
+                        <li class="choice">Efficient organization of files</li>
+                        <li class="choice">Wastage of storage space due to small free spaces</li>
+                        <li class="choice">Fast file access</li>
+                        <li class="choice">Compression of files</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is an advantage of using a journaling file system?</h2>
+                    <ul>
+                        <li class="choice">Faster file access</li>
+                        <li class="choice">Better security</li>
+                        <li class="choice">Faster boot times</li>
+                        <li class="choice">loss under system crash</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file descriptor in the context of file systems?</h2>
+                    <ul>
+                        <li class="choice">locating the file</li>
+                        <li class="choice">To store file permissions</li>
+                        <li class="choice">To uniquely identify an open file in a process</li>
+                        <li class="choice">To manage directory entries</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which file system is commonly used in Linux distributions?</h2>
+                    <ul>
+                        <li class="choice">NTFS</li>
+                        <li class="choice">FAT32</li>
+                        <li class="choice">Ext4</li>
+                        <li class="choice">HFS+</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file control block (FCB)?</h2>
+                    <ul>
+                        <li class="choice">To store file data</li>
+                        <li class="choice">To manage file permissions</li>
+                        <li class="choice">To store file metadata</li>
+                        <li class="choice">To access files on files</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is a disadvantage of a FAT file system?</h2>
+                    <ul>
+                        <li class="choice">Maximum file size is limited to 4GB</li>
+                        <li class="choice">Strong security features</li>
+                        <li class="choice">Efficient use of disk space</li>
+                        <li class="choice">Compatibility with multiple operating systems</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the role of a file allocation table (FAT) in FAT file systems?</h2>
+                    <ul>
+                        <li class="choice">acilitating file and directory access on a FAT volume</li>
+                        <li class="choice">To manage file permissions</li>
+                        <li class="choice">To track the allocation of clusters on the disk</li>
+                        <li class="choice">To organize directory entries</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In a file system, what is the purpose of a file extension?</h2>
+                    <ul>
+                        <li class="choice">To specify the file type</li>
+                        <li class="choice">To allocate disk space</li>
+                        <li class="choice">To manage file permissions</li>
+                        <li class="choice">To control file access</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a hard link in Unix-like file systems?</h2>
+                    <ul>
+                        <li class="choice">create additional hard links to existing file</li>
+                        <li class="choice">To create a shortcut to a file</li>
+                        <li class="choice">To provide redundancy for file storage</li>
+                        <li class="choice">To create multiple directory entries for a single file</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is a characteristic of a distributed file system?</h2>
+                    <ul>
+                        <li class="choice">Centralized storage</li>
+                        <li class="choice">Limited scalability</li>
+                        <li class="choice">Redundant data</li>
+                        <li class="choice">File distribution across multiple servers</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file server in a networked file system?</h2>
+                    <ul>
+                        <li class="choice">To store system files</li>
+                        <li class="choice">To manage file permissions</li>
+                        <li class="choice">To provide access to files over a network</li>
+                        <li class="choice">To control file access</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>os.cpus().length in node gives you the value of</h2>
+                    <ul>
+                        <li class="choice">no of cores</li>
+                        <li class="choice">no of address</li>
+                        <li class="choice">no of data files</li>
+                        <li class="choice">efficiency</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Directory file's main puropse is</h2>
+                    <ul>
+                        <li class="choice">These files represent physical device like disks, terminals, printers,
+                            networks, tape drive etc.</li>
+                        <li class="choice">These may have text, databases or executable program.</li>
+                        <li class="choice">These files contain list of file names and other information related to these
+                            files.</li>
+                        <li class="choice">ALL</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>what does it mean by special file is file system</h2>
+                    <ul>
+                        <li class="choice">character special files</li>
+                        <li class="choice">block special files</li>
+                        <li class="choice">device files</li>
+                        <li class="choice">data files</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>which of the following is true for raw disk</h2>
+                    <ul>
+                        <li class="choice">disk without file system</li>
+                        <li class="choice">empty disk</li>
+                        <li class="choice">disk lacking logical file system</li>
+                        <li class="choice">disk having file system</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>where does swap space exists</h2>
+                    <ul>
+                        <li class="choice">primary memory</li>
+                        <li class="choice">secondary memory</li>
+                        <li class="choice">virtual memory</li>
+                        <li class="choice">CPU</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>full form, of MMU</h2>
+                    <ul>
+                        <li class="choice">memory management unit</li>
+                        <li class="choice">memory mapping unit</li>
+                        <li class="choice">main memory unit</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>While executing a program, if the program references a page which is not available in the main
+                        memory then it is known as?</h2>
+                    <ul>
+                        <li class="choice">demand paging</li>
+                        <li class="choice">frame fault</li>
+                        <li class="choice">page fault</li>
+                        <li class="choice">process fault</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>among the following which one is not a type of scheduler?</h2>
+                    <ul>
+                        <li class="choice">LTS</li>
+                        <li class="choice">MTS</li>
+                        <li class="choice">STS</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which among the following is fastest scheduler?</h2>
+                    <ul>
+                        <li class="choice">LTS</li>
+                        <li class="choice">MTS</li>
+                        <li class="choice">STS</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>which of the following mechanism is used to store and restore the state?</h2>
+                    <ul>
+                        <li class="choice">PCB</li>
+                        <li class="choice">program counter</li>
+                        <li class="choice">scheduling queue</li>
+                        <li class="choice">context switching</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>which of the following is dynamically allocated memory to a process during its run time?</h2>
+                    <ul>
+                        <li class="choice">heap</li>
+                        <li class="choice">stack</li>
+                        <li class="choice">queue</li>
+                        <li class="choice">data</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>which section contains the global and static variables?</h2>
+                    <ul>
+                        <li class="choice">heap</li>
+                        <li class="choice">stack</li>
+                        <li class="choice">data</li>
+                        <li class="choice">text</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Number of states in process life cycle is</h2>
+                    <ul>
+                        <li class="choice">4</li>
+                        <li class="choice">5</li>
+                        <li class="choice">6</li>
+                        <li class="choice">7</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>processor executes its instructions in ______ state</h2>
+                    <ul>
+                        <li class="choice">ready</li>
+                        <li class="choice">waiting</li>
+                        <li class="choice">running</li>
+                        <li class="choice">start</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which file system feature helps in recovering a file system after a crash or power failure?</h2>
+                    <ul>
+                        <li class="choice">Journaling</li>
+                        <li class="choice">File compression</li>
+                        <li class="choice">Encryption</li>
+                        <li class="choice">File linking</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of file permissions in a file system?</h2>
+                    <ul>
+                        <li class="choice">To control access to files and directories</li>
+                        <li class="choice">To compress files for storage</li>
+                        <li class="choice">To organize files in a directory</li>
+                        <li class="choice">To encrypt file contents</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In a Unix-like file system, what does the "chmod" command do?</h2>
+                    <ul>
+                        <li class="choice">allows an administrator to set or modify a file's permissions.</li>
+                        <li class="choice">Change file ownership</li>
+                        <li class="choice">Change file permissions</li>
+                        <li class="choice">Change file size</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file server in a distributed file system?</h2>
+                    <ul>
+                        <li class="choice">To store system files</li>
+                        <li class="choice">To manage file permissions</li>
+                        <li class="choice">To provide access to files over a network</li>
+                        <li class="choice">To control file access</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file directory?</h2>
+                    <ul>
+                        <li class="choice">To store information about files, such as their name, size, and location</li>
+                        <li class="choice">To organize files into a hierarchical structure</li>
+                        <li class="choice">To make it easier for users to find files</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the difference between a file and a directory?</h2>
+                    <ul>
+                        <li class="choice">A file is a collection of data, while a directory is a list of files.</li>
+                        <li class="choice">A file has a name and a size, while a directory does not.</li>
+                        <li class="choice">file is any kind of computer document and a directory is a computer document
+                            folder or filing cabinet</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file attribute?</h2>
+                    <ul>
+                        <li class="choice">To store additional information about a file, such as its creation date or
+                            access permissions</li>
+                        <li class="choice">To make it easier for the operating system to manage files</li>
+                        <li class="choice">To make it easier for users to find files</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file path?</h2>
+                    <ul>
+                        <li class="choice">To specify the location of a file in a file system</li>
+                        <li class="choice">To identify a file uniquely</li>
+                        <li class="choice">To make it easier for users to access files</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file access permission?</h2>
+                    <ul>
+                        <li class="choice">To control who can access a file and what operations they can perform on it
+                        </li>
+                        <li class="choice">To protect files from unauthorized access</li>
+                        <li class="choice">To prevent data corruption</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file lock?</h2>
+                    <ul>
+                        <li class="choice">To prevent multiple processes from accessing a file simultaneously</li>
+                        <li class="choice">To prevent data corruption</li>
+                        <li class="choice">To ensure that data is stored in a reliable and consistent manner</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file backup?</h2>
+                    <ul>
+                        <li class="choice">To protect data from loss or damage</li>
+                        <li class="choice">To restore data to a previous state</li>
+                        <li class="choice">To make it easier to recover from a disaster</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the difference between a file copy and a file move?</h2>
+                    <ul>
+                        <li class="choice">A file copy creates a new copy of a file, while a file move renames the file
+                            and changes its location.</li>
+                        <li class="choice">A file copy is used to back up a file, while a file move is used to organize
+                            files</li>
+                        <li class="choice">A file copy can be performed on the same storage device, while a file move
+                            must be performed on different storage devices.</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What are the different process states?</h2>
+                    <ul>
+                        <li class="choice">Running: The process is currently executing on the CPU.</li>
+                        <li class="choice">Ready: The process is waiting to run and is available to be scheduled onto
+                            the CPU.</li>
+                        <li class="choice">Waiting: The process is waiting for a resource, such as I/O or memory.</li>
+                        <li class="choice">all of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What are some common process scheduling algorithms?</h2>
+                    <ul>
+                        <li class="choice">First-come, first-served (FCFS)</li>
+                        <li class="choice">Round-robin (RR)</li>
+                        <li class="choice">Shortest job first (SJF)</li>
+                        <li class="choice">all of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is a process control block (PCB)?</h2>
+                    <ul>
+                        <li class="choice">A data structure that stores information about a process</li>
+                        <li class="choice">A program that controls the execution of other processes</li>
+                        <li class="choice">A hardware component that manages the allocation of CPU time to processes
+                        </li>
+                        <li class="choice">None of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of a file compression tool?</h2>
+                    <ul>
+                        <li class="choice">To reduce the size of a file</li>
+                        <li class="choice">To save storage space</li>
+                        <li class="choice">To make it easier to transmit files over a network</li>
+                        <li class="choice">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>PCB stands for</h2>
+                    <ul>
+                        <li class="choice">process control block</li>
+                        <li class="choice">previous control block</li>
+                        <li class="choice">package control block</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is an operating system?</h2>
+                    <ul>
+                        <li class="choice">interface between the hardware and application programs</li>
+                        <li class="choice">collection of programs that manages hardware resources</li>
+                        <li class="choice">system service provider to the application programs</li>
+                        <li class="choice">all of the mentioned</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>which scheduler is known as job scheduler?</h2>
+                    <ul>
+                        <li class="choice">LTS</li>
+                        <li class="choice">STS</li>
+                        <li class="choice">MTS</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In a timeshare operating system, when the time slot assigned to a process is completed, the
+                        process switches from the current state to?</h2>
+                    <ul>
+                        <li class="choice">Suspended state</li>
+                        <li class="choice">Terminated state</li>
+                        <li class="choice">Ready state</li>
+                        <li class="choice">blocked state</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The address of the next instruction to be executed for the current process is stored in</h2>
+                    <ul>
+                        <li class="choice">CPU resisters</li>
+                        <li class="choice">program counter</li>
+                        <li class="choice">process state</li>
+                        <li class="choice">process number</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the degree of multiprogramming?</h2>
+                    <ul>
+                        <li class="choice">the number of processes executed per unit time</li>
+                        <li class="choice">the number of processes in the ready queue</li>
+                        <li class="choice">the number of processes in memory</li>
+                        <li class="choice">the number of processes in the I/O queue</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Data collection created by a user is called</h2>
+                    <ul>
+                        <li class="choice">process location block</li>
+                        <li class="choice">process creation</li>
+                        <li class="choice">files</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>When a program is loaded into the main memory it is called as</h2>
+                    <ul>
+                        <li class="choice">process</li>
+                        <li class="choice">procedure</li>
+                        <li class="choice">register</li>
+                        <li class="choice">table</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is a process in the context of an operating system?</h2>
+                    <ul>
+                        <li class="choice">a program in execution</li>
+                        <li class="choice">a file stored on the hard drive</li>
+                        <li class="choice">a folder in the file system</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is not a function of an operating system?</h2>
+                    <ul>
+                        <li class="choice">memory management</li>
+                        <li class="choice">application development</li>
+                        <li class="choice">process schedulling</li>
+                        <li class="choice">file management</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>degree of multiprogramming is controlled by</h2>
+                    <ul>
+                        <li class="choice">LTS</li>
+                        <li class="choice">MTS</li>
+                        <li class="choice">STS</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>When the process issues an I/O request __________</h2>
+                    <ul>
+                        <li class="choice">placed in an I/O queue</li>
+                        <li class="choice">placed in ready queue</li>
+                        <li class="choice">placed in conatiner</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is a long-term scheduler?</h2>
+                    <ul>
+                        <li class="choice">It selects processes which have to be brought into the ready queue</li>
+                        <li class="choice">It selects processes which have to be executed next and allocates CPU</li>
+                        <li class="choice">It selects processes which heave to remove from memory by swapping</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>translation from logical address to physical address is done by</h2>
+                    <ul>
+                        <li class="choice">MMU</li>
+                        <li class="choice">NMU</li>
+                        <li class="choice">NNU</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>when a program is removed from the hard disk and putting it back in the RAM</h2>
+                    <ul>
+                        <li class="choice">swap in</li>
+                        <li class="choice">swap out</li>
+                        <li class="choice">swap up</li>
+                        <li class="choice">swap down</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>which memory management technique is used for dividing secondary memory in fixed-size blocks
+                        called pages</h2>
+                    <ul>
+                        <li class="choice">paging</li>
+                        <li class="choice">segmentation</li>
+                        <li class="choice">fragmentation</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The total amount of free available primary is sufficient to reside a process, but can not be
+                        used because it is non-contiguous</h2>
+                    <ul>
+                        <li class="choice">external fragmentation</li>
+                        <li class="choice">internal fragmentaion</li>
+                        <li class="choice">both 1 and 2</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>what is internal fragmentation ?</h2>
+                    <ul>
+                        <li class="choice">when the memory block assigned to the process is larger than the amount
+                            memory required by the process</li>
+                        <li class="choice">when the memory block assigned to the process is smaller than the amount
+                            memory required by the process</li>
+                        <li class="choice">The total amount of free available primary is sufficient to reside a process,
+                            but can not be used because it is non-contiguous</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>segement table contains</h2>
+                    <ul>
+                        <li class="choice">base address only</li>
+                        <li class="choice">size of segment only</li>
+                        <li class="choice">base address and size of segment</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The segment base contains the ____________</h2>
+                    <ul>
+                        <li class="choice">starting logical address of the process</li>
+                        <li class="choice">starting physical address of the segment in memory</li>
+                        <li class="choice">segment length</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the primary purpose of memory management in an operating system?</h2>
+                    <ul>
+                        <li class="choice">Increase CPU speed</li>
+                        <li class="choice">Store temporary files</li>
+                        <li class="choice">Manage and allocate system memory</li>
+                        <li class="choice">Control input/output operations</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is fragmentation in the context of memory management?</h2>
+                    <ul>
+                        <li class="choice">Efficient use of memory</li>
+                        <li class="choice">Wasting disk space</li>
+                        <li class="choice">Arranging memory in contiguous blocks</li>
+                        <li class="choice">Dividing processes into pages</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Round robin scheduling falls under the category of ____________</h2>
+                    <ul>
+                        <li class="choice">Non-preemptive scheduling</li>
+                        <li class="choice">Preemptive scheduling</li>
+                        <li class="choice">All of the mentioned</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The portion of the process scheduler in an operating system that dispatches processes is
+                        concerned with ____________</h2>
+                    <ul>
+                        <li class="choice">assigning ready processes to CPU</li>
+                        <li class="choice">assigning ready processes to waiting queue</li>
+                        <li class="choice">assigning running processes to blocked queue</li>
+                        <li class="choice">all</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is FIFO algorithm?</h2>
+                    <ul>
+                        <li class="choice">first executes the job that came in last in the queue</li>
+                        <li class="choice">first executes the job that came in first in the queue</li>
+                        <li class="choice">first executes the job that needs minimal processor</li>
+                        <li class="choice">first executes the job that has maximum processor needs</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The strategy of making processes that are logically runnable to be temporarily suspended is
+                        called ____________</h2>
+                    <ul>
+                        <li class="choice">non preemptive scheduling</li>
+                        <li class="choice">preemptive scheduling</li>
+                        <li class="choice">shortest job first</li>
+                        <li class="choice">first come first served</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is Scheduling?</h2>
+                    <ul>
+                        <li class="choice">allowing a job to use the processor</li>
+                        <li class="choice">making proper use of processor</li>
+                        <li class="choice">All of the mentioned</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Under multiprogramming, turnaround time for short jobs is usually ________ and that for long
+                        jobs is slightly ___________</h2>
+                    <ul>
+                        <li class="choice">Lengthened; Shortened</li>
+                        <li class="choice">Shortened; Lengthened</li>
+                        <li class="choice">Shortened; Shortened</li>
+                        <li class="choice">Shortened; Unchanged</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Is optimal page replacement algorithm practically possible?</h2>
+                    <ul>
+                        <li class="choice">yes</li>
+                        <li class="choice">No</li>
+                        <li class="choice">depends on situation</li>
+                        <li class="choice">all</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The implementation of the LFU and the MFU algorithm is very uncommon because ____________</h2>
+                    <ul>
+                        <li class="choice">they are too complicated</li>
+                        <li class="choice">they are optimal</li>
+                        <li class="choice">they are expensive</li>
+                        <li class="choice">all</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the primary purpose of virtual memory in an operating system?</h2>
+                    <ul>
+                        <li class="choice">Increase CPU speed</li>
+                        <li class="choice">Expand the physical memory</li>
+                        <li class="choice">Improve disk access time</li>
+                        <li class="choice">Enhance file management</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following page replacement algorithms suffers from Belady’s Anomaly?</h2>
+                    <ul>
+                        <li class="choice">optimal replacement</li>
+                        <li class="choice">LRU</li>
+                        <li class="choice">FIFO</li>
+                        <li class="choice">both optimal replacement and FIFO</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is not an operating system?</h2>
+                    <ul>
+                        <li class="choice">windows</li>
+                        <li class="choice">linux</li>
+                        <li class="choice">oracle</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following is the extension of Notepad?</h2>
+                    <ul>
+                        <li class="choice">.txt</li>
+                        <li class="choice">.xls</li>
+                        <li class="choice">.ppt</li>
+                        <li class="choice">.bmp</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>BIOS is used?</h2>
+                    <ul>
+                        <li class="choice">by operating system</li>
+                        <li class="choice">by compiler</li>
+                        <li class="choice">by interpreter</li>
+                        <li class="choice">by application software</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>When you delete a file in your computer, where does it go?</h2>
+                    <ul>
+                        <li class="choice">recycle bin</li>
+                        <li class="choice">hard disk</li>
+                        <li class="choice">taskbar</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Where are placed the list of processes that are prepared to be executed ?</h2>
+                    <ul>
+                        <li class="choice">job queue</li>
+                        <li class="choice">ready queue</li>
+                        <li class="choice">execution queue</li>
+                        <li class="choice">process queue</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What type of scheduling is round-robin scheduling?</h2>
+                    <ul>
+                        <li class="choice">Linear data scheduling</li>
+                        <li class="choice">Non-linear data scheduling</li>
+                        <li class="choice">Preemptive scheduling</li>
+                        <li class="choice">Non-preemptive scheduling</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following scheduling algorithms is preemptive scheduling?</h2>
+                    <ul>
+                        <li class="choice">FCFS Scheduling</li>
+                        <li class="choice">SJF scheduling</li>
+                        <li class="choice">Network scheduling</li>
+                        <li class="choice">SRTF scheduling</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What type of memory stores data in a swap file on a hard drive?</h2>
+                    <ul>
+                        <li class="choice">secondary memory</li>
+                        <li class="choice">virtual memory</li>
+                        <li class="choice">low memeory</li>
+                        <li class="choice">RAM</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The operating system work between</h2>
+                    <ul>
+                        <li class="choice">User and Computer</li>
+                        <li class="choice">Network and User</li>
+                        <li class="choice">One user to another user</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the paging in the operating system?</h2>
+                    <ul>
+                        <li class="choice">memory management scheme</li>
+                        <li class="choice">network management scheme</li>
+                        <li class="choice">internet management scheme</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following programs is loaded first when starting a computer?</h2>
+                    <ul>
+                        <li class="choice">Operating System</li>
+                        <li class="choice">CMD</li>
+                        <li class="choice">window desktop</li>
+                        <li class="choice">network connection program</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following scheduling algorithm is non-preemptive scheduling?</h2>
+                    <ul>
+                        <li class="choice">SJF scheduling</li>
+                        <li class="choice">Round-Robin scheduling</li>
+                        <li class="choice">SRTF scheduling</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following scheduling reduces process flow time?</h2>
+                    <ul>
+                        <li class="choice">FCFS</li>
+                        <li class="choice">LIFO</li>
+                        <li class="choice">SJF</li>
+                        <li class="choice">ALL</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>How many types of buffer overflow in the operating system?</h2>
+                    <ul>
+                        <li class="choice">two</li>
+                        <li class="choice">six</li>
+                        <li class="choice">seven</li>
+                        <li class="choice">five</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In which allocation method does the user size the file before creating the file?</h2>
+                    <ul>
+                        <li class="choice">contiguous</li>
+                        <li class="choice">non-contiguous</li>
+                        <li class="choice">linked</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following method is used to improve the main memory utilization?</h2>
+                    <ul>
+                        <li class="choice">swapping</li>
+                        <li class="choice">operating system</li>
+                        <li class="choice">memory stack</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The PCB is identified by ___________.</h2>
+                    <ul>
+                        <li class="choice">real number</li>
+                        <li class="choice">binary number</li>
+                        <li class="choice">process ID</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following statements is correct about virtual memory?</h2>
+                    <ul>
+                        <li class="choice">It is a combination of the logical-memory and physical-memory</li>
+                        <li class="choice">It is a separation of user logical memory and physical memory</li>
+                        <li class="choice">It is a virtual network memory</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>By using the specific system call, we can ____________</h2>
+                    <ul>
+                        <li class="choice">open file</li>
+                        <li class="choice">read file</li>
+                        <li class="choice">write into the file</li>
+                        <li class="choice">ALL</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>File type can be represented by ____________</h2>
+                    <ul>
+                        <li class="choice">file name</li>
+                        <li class="choice">file extension</li>
+                        <li class="choice">file identifier</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the reason for using the LFU page replacement algorithm?</h2>
+                    <ul>
+                        <li class="choice">an actively used page should have a large reference count</li>
+                        <li class="choice">a less used page has more chances to be used again</li>
+                        <li class="choice">it is extremely efficient and optimal</li>
+                        <li class="choice">ALL</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the reason for using the MFU page replacement algorithm?</h2>
+                    <ul>
+                        <li class="choice">an actively used page should have a large reference count</li>
+                        <li class="choice">a less used page has more chances to be used again</li>
+                        <li class="choice">it is extremely efficient and optimal</li>
+                        <li class="choice">ALL</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>MRU stands for what?</h2>
+                    <ul>
+                        <li class="choice">most recently used</li>
+                        <li class="choice">least recently used</li>
+                        <li class="choice">most facing used</li>
+                        <li class="choice">ALL</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The number of processes/task completed per unit time is known as __________</h2>
+                    <ul>
+                        <li class="choice">output</li>
+                        <li class="choice">throughput</li>
+                        <li class="choice">efficiency</li>
+                        <li class="choice">capacity</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>out of all option which of the following is not a state?</h2>
+                    <ul>
+                        <li class="choice">new</li>
+                        <li class="choice">old</li>
+                        <li class="choice">waiting</li>
+                        <li class="choice">running</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>PCB is data structure used to store what?</h2>
+                    <ul>
+                        <li class="choice">process information</li>
+                        <li class="choice">data structure</li>
+                        <li class="choice">second storage section</li>
+                        <li class="choice">a block in memory</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>paging is a type of ______ technique</h2>
+                    <ul>
+                        <li class="choice">contiguous</li>
+                        <li class="choice">non contiguous</li>
+                        <li class="choice">both 1 and 2</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Given reference string 1,3,0,3,5,6,3 with frame size 3, find the number of page faults is we are
+                        using FIFO page replacement algorithm?</h2>
+                    <ul>
+                        <li class="choice">4</li>
+                        <li class="choice">5</li>
+                        <li class="choice">6</li>
+                        <li class="choice">7</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>A process refers to 5 pages, A, B, C, D, E in the order : A, B, C, D, A, B, E, A, B, C, D, E. If
+                        the page replacement algorithm is FIFO, the number of page frames is increased to 4, then the
+                        number of page transfers ____________</h2>
+                    <ul>
+                        <li class="choice">decreases</li>
+                        <li class="choice">increases</li>
+                        <li class="choice">remains same</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which scheduling algorithm aims to minimize the average waiting time for processes?</h2>
+                    <ul>
+                        <li class="choice">FCFS (First come first serve)</li>
+                        <li class="choice">SJN (shortest job next)</li>
+                        <li class="choice">Round Robin</li>
+                        <li class="choice">Priority Scheduling</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the main drawback of the First-Come-First-Serve (FCFS) scheduling algorithm?</h2>
+                    <ul>
+                        <li class="choice">It may lead to starvation</li>
+                        <li class="choice">It doesn't utilize CPU time efficiently</li>
+                        <li class="choice">It has high overhead</li>
+                        <li class="choice">It requires complex prioritization rules</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In a preemptive scheduling algorithm, a higher priority process can interrupt the execution of a
+                        lower priority process. Which algorithm is an example of preemptive scheduling?</h2>
+                    <ul>
+                        <li class="choice">FCFS (First come first serve)</li>
+                        <li class="choice">SJN (shortest job next)</li>
+                        <li class="choice">priority scheduling</li>
+                        <li class="choice">round robin</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The time taken by a process from the time of submission to the time of completion is called:
+                    </h2>
+                    <ul>
+                        <li class="choice">turnaround time</li>
+                        <li class="choice">waiting time</li>
+                        <li class="choice">execution time</li>
+                        <li class="choice">response time</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which scheduling algorithm allows processes with the same priority to execute in a
+                        first-come-first-serve order?</h2>
+                    <ul>
+                        <li class="choice">FCFS</li>
+                        <li class="choice">SJN</li>
+                        <li class="choice">priority scheduling</li>
+                        <li class="choice">round robin</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>A process that has completed execution and has exited is said to be in the:</h2>
+                    <ul>
+                        <li class="choice">ready state</li>
+                        <li class="choice">running state</li>
+                        <li class="choice">terminated state</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which one of the following is not shared by threads?</h2>
+                    <ul>
+                        <li class="choice">program counter</li>
+                        <li class="choice">stack</li>
+                        <li class="choice">both program counter and stack</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>A process can be_____</h2>
+                    <ul>
+                        <li class="choice">single threaded</li>
+                        <li class="choice">multithreaded</li>
+                        <li class="choice">both single threaded and multithreaded</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Termination of the process terminates ___________</h2>
+                    <ul>
+                        <li class="choice">thread of the process</li>
+                        <li class="choice">program counter</li>
+                        <li class="choice">RAM Processing</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>A thread shares its resources (like data section, code section, open files, signals) with
+                        ___________</h2>
+                    <ul>
+                        <li class="choice">other process similar to the one that the thread belongs to</li>
+                        <li class="choice">other threads that belong to similar processes</li>
+                        <li class="choice">other threads that belong to the same process</li>
+                        <li class="choice">All</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Logical memory is broken into blocks of the same size called ________</h2>
+                    <ul>
+                        <li class="choice">frames</li>
+                        <li class="choice">pages</li>
+                        <li class="choice">group</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The _____ table contains the base address of each page in physical memory.</h2>
+                    <ul>
+                        <li class="choice">process</li>
+                        <li class="choice">memory</li>
+                        <li class="choice">page</li>
+                        <li class="choice">frame</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>For every process there is a __________</h2>
+                    <ul>
+                        <li class="choice">page table</li>
+                        <li class="choice">copy of page table</li>
+                        <li class="choice">pointer to page table</li>
+                        <li class="choice">All</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In a computer system with 4GB of RAM, a process requires 2GB of contiguous memory. What is the
+                        maximum amount of memory that can be allocated to this process using a single contiguous memory
+                        allocation technique?</h2>
+                    <ul>
+                        <li class="choice">1GB</li>
+                        <li class="choice">2GB</li>
+                        <li class="choice">4GB</li>
+                        <li class="choice">3GB</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In a multi-threaded program, the code segment is usually shared among all threads because:</h2>
+                    <ul>
+                        <li class="choice">It simplifies memory management</li>
+                        <li class="choice">It improves thread synchronization</li>
+                        <li class="choice">Code is read-only and doesn't change during program execution</li>
+                        <li class="choice">Threads can execute their code independently</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which memory allocation method allocates the entire memory to a single process until it releases
+                        it?</h2>
+                    <ul>
+                        <li class="choice">contiguous memory allocation</li>
+                        <li class="choice">paging</li>
+                        <li class="choice">segmentation</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which memory protection mechanism prevents one process from accessing the memory of another
+                        process?</h2>
+                    <ul>
+                        <li class="choice">segmentation</li>
+                        <li class="choice">paging</li>
+                        <li class="choice">contiguous memory alloaction</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the role of the Memory Management Unit (MMU) in memory management?</h2>
+                    <ul>
+                        <li class="choice">It manages the allocation of virtual memory</li>
+                        <li class="choice">It controls CPU cache operations</li>
+                        <li class="choice">It translates virtual addresses to physical addresses</li>
+                        <li class="choice">It ensures data integrity in main memory</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the term for the situation where a process is larger than the available contiguous block
+                        of memory?</h2>
+                    <ul>
+                        <li class="choice">Internal fragmentation</li>
+                        <li class="choice">External fragmentation</li>
+                        <li class="choice">Paging</li>
+                        <li class="choice">segmentation</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is the purpose of the "swapping" technique in memory management?</h2>
+                    <ul>
+                        <li class="choice">To increase the size of virtual memory</li>
+                        <li class="choice">To optimize CPU scheduling</li>
+                        <li class="choice">To move an entire process in and out of main memory</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Because of virtual memory, the memory can be shared among ____________</h2>
+                    <ul>
+                        <li class="choice">processes</li>
+                        <li class="choice">threads</li>
+                        <li class="choice">instructions</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Separation of user logical memory and physical memory is ___________</h2>
+                    <ul>
+                        <li class="choice">memory control</li>
+                        <li class="choice">memory management</li>
+                        <li class="choice">memory sharing</li>
+                        <li class="choice">virtual memory</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>To create a file ____________</h2>
+                    <ul>
+                        <li class="choice">allocate the space in file system</li>
+                        <li class="choice">make an entry for new file in directory</li>
+                        <li class="choice">allocate the space in the file system &amp; make an entry for new file in
+                            directory</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In which type of allocation method each file occupies a set of contiguous blocks on the disk?
+                    </h2>
+                    <ul>
+                        <li class="choice">contiguous allocation</li>
+                        <li class="choice">paging</li>
+                        <li class="choice">segmentation</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>File attributes consist of ____________</h2>
+                    <ul>
+                        <li class="choice">name</li>
+                        <li class="choice">type</li>
+                        <li class="choice">identifier</li>
+                        <li class="choice">ALL</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which of the following are the two parts of the file name?</h2>
+                    <ul>
+                        <li class="choice">name &amp; identifier</li>
+                        <li class="choice">identifier &amp; name</li>
+                        <li class="choice">extension &amp; name</li>
+                        <li class="choice">type &amp; extension</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Consider the following processes P1, P2, P3 having burst time 24,3,3 respectively, if algorithms
+                        used is SJF then find the average waiting time ?</h2>
+                    <ul>
+                        <li class="choice">17</li>
+                        <li class="choice">18</li>
+                        <li class="choice">19</li>
+                        <li class="choice">20</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Consider the following processes P1, P2, P3 having burst time 3,3,24 respectively, if algorithms
+                        used is FCFS then find the average waiting time ?</h2>
+                    <ul>
+                        <li class="choice">4</li>
+                        <li class="choice">5</li>
+                        <li class="choice">3</li>
+                        <li class="choice">6</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Consider the following processes P1, P2, P3,P4,P5 having burst time 5,4,3,2,4 respectively, if
+                        algorithms used is FCFS then find the average waiting time ?</h2>
+                    <ul>
+                        <li class="choice">8</li>
+                        <li class="choice">5</li>
+                        <li class="choice">6</li>
+                        <li class="choice">7</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Consider the following processes P1, P2, P3,P4,P5 having having burst time 50,4,3,2,4
+                        respectively, if algorithms used is FCFS then find the average waiting time ?</h2>
+                    <ul>
+                        <li class="choice">44</li>
+                        <li class="choice">7.7</li>
+                        <li class="choice">7.8</li>
+                        <li class="choice">7.9</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Consider the following processes P1, P2, P3,P4,P5 having burst time 5,4,3,2,14 respectively, if
+                        algorithms used is FCFS then find the avg waiting time is?</h2>
+                    <ul>
+                        <li class="choice">8.4</li>
+                        <li class="choice">5</li>
+                        <li class="choice">8</li>
+                        <li class="choice">9</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Consider the following processes P1, P2, P3,P4 having burst time15,8,3,10 respectively, if
+                        algorithms used is SJF then find the average waiting time of all the processes?</h2>
+                    <ul>
+                        <li class="choice">18</li>
+                        <li class="choice">7.75</li>
+                        <li class="choice">17</li>
+                        <li class="choice">20</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In FCFS, the process that requests the CPU first is allocated the CPU first</h2>
+                    <ul>
+                        <li class="choice"></li>
+                        <li class="choice"></li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Consider the following processes P1, P2, P3,P4,P5 having arrival time 4,6,0,6,5 and burst time
+                        5,4,3,2,4 respectively, if algorithms used is FCFS then find the response time of process P2?
+                    </h2>
+                    <ul>
+                        <li class="choice">7</li>
+                        <li class="choice">0</li>
+                        <li class="choice">9</li>
+                        <li class="choice">4</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The state of a process is defined by:</h2>
+                    <ul>
+                        <li class="choice">the current activity of the process</li>
+                        <li class="choice">the final activity of the process</li>
+                        <li class="choice">the activity just executed by the process</li>
+                        <li class="choice">the activity to next be executed by the process</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>degree of multi programming refers to</h2>
+                    <ul>
+                        <li class="choice">the number of processes executed per unit time</li>
+                        <li class="choice">the number of processes in the ready queue</li>
+                        <li class="choice">the number of processes in the I/O queue</li>
+                        <li class="choice">the number of processes in memory</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which scheduler Speed is fastest?</h2>
+                    <ul>
+                        <li class="choice">LTS</li>
+                        <li class="choice">STS</li>
+                        <li class="choice">MTS</li>
+                        <li class="choice">swaping</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>A_________ is the mechanism to store and restore the state</h2>
+                    <ul>
+                        <li class="choice">PCB</li>
+                        <li class="choice">Program counter</li>
+                        <li class="choice">registers</li>
+                        <li class="choice">context switching</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>The entry of all the PCBs of the current processes is in __________</h2>
+                    <ul>
+                        <li class="choice">process register</li>
+                        <li class="choice">Program counter</li>
+                        <li class="choice">process table</li>
+                        <li class="choice">process unit</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>A file is a sequence of?</h2>
+                    <ul>
+                        <li class="choice">bits</li>
+                        <li class="choice">bytes</li>
+                        <li class="choice">lines</li>
+                        <li class="choice">ALL</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>_________ is a sequence of procedures and functions</h2>
+                    <ul>
+                        <li class="choice">object file</li>
+                        <li class="choice">source file</li>
+                        <li class="choice">text file</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is true about Directory files?</h2>
+                    <ul>
+                        <li class="choice">These files represent physical device like disks, terminals, printers,
+                            networks, tape drive etc.</li>
+                        <li class="choice">These may have text, databases or executable program.</li>
+                        <li class="choice">These files contain list of file names and other information related to these
+                            files.</li>
+                        <li class="choice">ALL</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Special files : These files are also known as?</h2>
+                    <ul>
+                        <li class="choice">character special files</li>
+                        <li class="choice">block special files</li>
+                        <li class="choice">device files</li>
+                        <li class="choice">data files</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>What is raw disk?</h2>
+                    <ul>
+                        <li class="choice">disk without file system</li>
+                        <li class="choice">empty disk</li>
+                        <li class="choice">disk lacking logical file system</li>
+                        <li class="choice">disk having file system</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Swap space exists in ____________</h2>
+                    <ul>
+                        <li class="choice">primary memory</li>
+                        <li class="choice">secondary memory</li>
+                        <li class="choice">virtual memory</li>
+                        <li class="choice">CPU</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>MMU stands for?</h2>
+                    <ul>
+                        <li class="choice">memory management unit</li>
+                        <li class="choice">memory mapping unit</li>
+                        <li class="choice">main memory unit</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>pages of a process which are least used, get stored in the secondary memory and called when
+                        there is requirement (demand) , it is known as</h2>
+                    <ul>
+                        <li class="choice">demand paging</li>
+                        <li class="choice">frame fault</li>
+                        <li class="choice">page fault</li>
+                        <li class="choice">process fault</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Which is not a type of Schedulers?</h2>
+                    <ul>
+                        <li class="choice">LTS</li>
+                        <li class="choice">MTS</li>
+                        <li class="choice">STS</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>fastest scheduler is</h2>
+                    <ul>
+                        <li class="choice">LTS</li>
+                        <li class="choice">MTS</li>
+                        <li class="choice">STS</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>A_________ is the mechanism to store and restore the state\</h2>
+                    <ul>
+                        <li class="choice">PCB</li>
+                        <li class="choice">program counter</li>
+                        <li class="choice">scheduling queue</li>
+                        <li class="choice">context switching</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>This is dynamically allocated memory to a process during its run time.</h2>
+                    <ul>
+                        <li class="choice">heap</li>
+                        <li class="choice">stack</li>
+                        <li class="choice">queue</li>
+                        <li class="choice">data</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>This section contains the global and static variables.</h2>
+                    <ul>
+                        <li class="choice">heap</li>
+                        <li class="choice">stack</li>
+                        <li class="choice">data</li>
+                        <li class="choice">text</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>How many state are there in Process Life Cycle?</h2>
+                    <ul>
+                        <li class="choice">4</li>
+                        <li class="choice">5</li>
+                        <li class="choice">6</li>
+                        <li class="choice">7</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>In which state, processor executes its instructions?</h2>
+                    <ul>
+                        <li class="choice">ready</li>
+                        <li class="choice">waiting</li>
+                        <li class="choice">running</li>
+                        <li class="choice">start</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>LRU stands for</h2>
+                    <ul>
+                        <li class="choice">least recently used</li>
+                        <li class="choice">lost recently used</li>
+                        <li class="choice">last recently used</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>full form of cpu</h2>
+                    <ul>
+                        <li class="choice">central processing unit</li>
+                        <li class="choice">central processing unary</li>
+                        <li class="choice">control processing unit</li>
+                        <li class="choice">control plane unit</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>which algorith is better between these two - fcfs or sjf</h2>
+                    <ul>
+                        <li class="choice">fcfs</li>
+                        <li class="choice">sjf</li>
+                        <li class="choice">both</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>no of cores in an octacore process are</h2>
+                    <ul>
+                        <li class="choice">8</li>
+                        <li class="choice">2</li>
+                        <li class="choice">22</li>
+                        <li class="choice">16</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2>Round robin algorithm is</h2>
+                    <ul>
+                        <li class="choice">preemptive</li>
+                        <li class="choice">non-preemptive</li>
+                        <li class="choice">both</li>
+                        <li class="choice">NOT</li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="site-footer">
+                <p>© 2023 NAAI. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
